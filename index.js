@@ -1,5 +1,56 @@
 
-/* function agregarInput() {
+
+
+function mostrarInput() {
+  let valor=prompt("Agregue a su lista");
+  var li = document.createElement("li");
+  li.innerHTML = `
+                 
+
+                    
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">${valor}</label>
+                    </div>
+                    `
+      
+                
+     
+                    
+                    // Agregamos el nuevo elemento a la lista
+                    document.getElementById("lista").appendChild(li);
+           
+                  }
+                        
+
+
+
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+// cosas para ver
+
+
+             {/* <input type="checkbox"  id="checkbox" />
+                    <label id="palabra">${valor}</label> */}
+
+
+
+
+
+                    /* function agregarInput() {
   // Obtenemos el valor del input
   var valor = document.getElementById("input").value;
   var li = document.createElement("li");
@@ -54,24 +105,3 @@ checkbox.addEventListener("change", () => {
   
 
 {/* <button onclick="borrarPalabra()">Borrar</button> */}
-
-
-function mostrarInput() {
-  let valor=prompt("Agregue a su lista");
-  // alert(`Tienes ${valor} años!`);
-  var li = document.createElement("li");
-  li.innerHTML = `
-                 
-
-                    <input type="checkbox"  id="checkbox" />
-                    <label id="palabra">${valor}</label>
-                    
-      
-                
-     
-                  
-  `
-
-  // Agregamos el nuevo elemento a la lista
-  document.getElementById("lista").appendChild(li);
-}

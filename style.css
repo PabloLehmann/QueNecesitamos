@@ -1,11 +1,42 @@
-#botonAgregar{
+#agregar-tarea{
     height: 80px;
     width: 80px;
+}
+
+
+#header{
+    background-color: bisque ;
 }
 #logo{
     height: 80px;
     width: 80px;
 }
-#header{
-    background-color: bisque ;
-}
+.tarea {
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+  
+  .tarea.tachada {
+    text-decoration: line-through;
+  }
+  
+  .boton-tachar, .boton-eliminar {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .boton-tachar {
+    background-color: #009900;
+    color: #fff;
+  }
+  
+  .boton-eliminar {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  

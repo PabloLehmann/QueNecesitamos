@@ -21,9 +21,15 @@ function mostrarInput() {
                     document.getElementById("lista").appendChild(li);
            
                   }
-                        
+            
 
+// Modal 
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
 
 
                   
@@ -50,7 +56,7 @@ function mostrarInput() {
 
 
 
-                    /* function agregarInput() {
+  /* function agregarInput() {
   // Obtenemos el valor del input
   var valor = document.getElementById("input").value;
   var li = document.createElement("li");
@@ -100,8 +106,8 @@ const checkbox = document.getElementById("checkbox");
 checkbox.addEventListener("change", () => {
   tachaPalabra("palabra", checkbox);
 });
-} */
+}  */
 
   
 
-{/* <button onclick="borrarPalabra()">Borrar</button> */}
+//  <button onclick="borrarPalabra()">Borrar</button> 
